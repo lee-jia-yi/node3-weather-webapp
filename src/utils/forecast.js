@@ -14,7 +14,7 @@ const forecast = (longitude, latitude, callback) => {
    const { weather_descriptions, temperature, feelslike, uv_index, is_day } = body.current
 
    const weatherDesc = `${weather_descriptions[0]}. `
-   const tempDesc = `It is currently ${String(temperature)} degrees celsius out. It feels like ${feelslike} degrees celsius out. `
+   const tempDesc = `It is currently ${String(temperature)} degrees out. It feels like ${feelslike} degrees out. `
    var uvDesc = `UV index: ${uv_index}. ` 
 
    if (uv_index >= 11){
